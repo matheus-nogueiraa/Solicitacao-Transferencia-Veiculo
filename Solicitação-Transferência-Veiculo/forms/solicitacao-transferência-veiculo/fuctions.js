@@ -9,3 +9,15 @@ function toggleJustificativa() {
     $('#justificativaGroup').show();
   }
 }
+
+function setSelectedZoomItem(selectedItem) {
+  if (selectedItem.inputId === 'centroDeCustoAprovador') {
+    $('#codigo_grupo').val(selectedItem.grupoAprovador);
+  }
+}
+
+function removedZoomItem(removedItem) {
+  if (removedItem.inputId === "centroDeCustoAprovador") {
+    $("#codigo_grupo").val('');
+  }
+}

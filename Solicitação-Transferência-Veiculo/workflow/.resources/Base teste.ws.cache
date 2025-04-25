@@ -22,7 +22,7 @@
      <string>centroDeCustoSolicitante</string>
     </void>
     <void index="3">
-     <string>centroDeCustoTransferencia</string>
+     <string>codigo_grupo</string>
     </void>
     <void index="4">
      <string>dataSolicitacao</string>

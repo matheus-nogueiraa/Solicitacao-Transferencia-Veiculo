@@ -1,0 +1,52 @@
+var beforeSendValidate = function (numState, nextState) {
+  if (!$("input[name='centroDeCustoAprovador']").val() || $("input[name='centroDeCustoAprovador']").val().trim() === "") {
+    showSweetTimerAlert(
+      'O campo "Centro de custo destino e aprovador" é obrigatório e não foi preenchido.',
+      "warning",
+    );
+    return false;
+  }
+
+  if (!$("input[name='dataTransferencia']").val() || $("input[name='dataTransferencia']").val().trim() === "") {
+    showSweetTimerAlert(
+      'O campo "Data da Transferência" é obrigatório e não foi preenchido.',
+      "warning",
+    );
+    return false;
+  }
+
+  if (!$("input[name='placa']").val() || $("input[name='placa']").val().trim() === "") {
+    showSweetTimerAlert(
+      'O campo "Placa do Veículo" é obrigatório e não foi preenchido.',
+      "warning",
+    );
+    return false;
+  }
+
+  if (!$("textarea[name='motivo']").val() || $("textarea[name='motivo']").val().trim() === "") {
+    showSweetTimerAlert(
+      'O campo "Motivo" é obrigatório e não foi preenchido.',
+      "warning",
+    );
+    return false;
+  }
+
+  if (!$("input[name='nomeSolicitante']").val() || $("input[name='nomeSolicitante']").val().trim() === "") {
+    showSweetTimerAlert(
+      'O campo "Nome do Solicitante" é obrigatório e não foi preenchido.',
+      "warning",
+      
+    );
+    return false;
+  }
+
+  if (!$("input[name='dataSolicitacao']").val() || $("input[name='dataSolicitacao']").val().trim() === "") {
+    showSweetTimerAlert(
+      'O campo "Data da Solicitação" é obrigatório e não foi preenchido.',
+      "warning",
+    );
+    return false;
+  }
+
+  return true;
+}
